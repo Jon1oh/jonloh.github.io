@@ -1,0 +1,20 @@
+- name: Cyber Range Development
+  percentage: 70
+  color: danger
+
+- name: Actve Directory Pentesting
+  percentage: 55
+  color: warning
+
+- name: Python
+  percentage: 80
+  color: primary
+
+- name: Prompt Engineering
+  percentage: 90
+  color: info
+
+- name: Full-Stack Development
+  percentage: 50
+  color: success
+  

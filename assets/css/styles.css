@@ -1,0 +1,55 @@
+:root {
+  --background-light: #ffffff;
+  --background-dark: #212121;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: var(--background-dark);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: var(--background-light);
+  }
+}
+
+/* Fade in effects for landing image */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.d-block {
+  display: block;
+}
+
+.mx-auto .my-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bi {
+  margin-right: 30px;
+}
+
+/* Adapts unordered lists color when dark mode is enabled */
+ul .list-group, ul .list-group .list-group-item {
+  background: var(--background-color);
+}

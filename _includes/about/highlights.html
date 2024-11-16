@@ -1,0 +1,28 @@
+{% assign grouped_highlights = site.data.highlights.highlights | group_by: 'duration' %}
+<ul>
+    {% for group in grouped_highlights %}
+    {% if group.name %}
+    <li class="mb-3">
+        <strong>{{ group.name }}</strong>
+        <ul class="list-unstyled">
+            {% for highlight in group.items %}
+            <li class="mb-2">{{ highlight.name }}</li>
+            {% endfor %}
+        </ul>
+    </li>
+    {% else %}
+    {% for highlight in group.items %}
+    {% if highlight.duration %}
+    <li class="mb-3">
+        <strong>{{ highlight.duration }}</strong>
+        <ul class="list-unstyled">
+            <li class="mb-2">{{ highlight.name }}</li>
+        </ul>
+    </li>
+    {% else %}
+    <li class="mb-3">{{ highlight.name }}</li>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+</ul>

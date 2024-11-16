@@ -1,0 +1,7 @@
+{% for event in site.data.experiences.experiences %}
+  <div class="experience-item">
+    <h3>{{ event.title }}</h3>
+    <p>{{ event.from }} - {{ event.to }}</p>
+    <p>{{ event.description | newline_to_br }}</p>
+  </div>
+{% endfor %}

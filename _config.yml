@@ -1,7 +1,7 @@
 ### Site Settings ###
 title               : Jon Loh
 description         : Welcome to my personal website!
-baseurl             : "/portfolYOU"            # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+baseurl             : ""            # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : yousinix/portfolYOU      # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : yousinix/portfolYOU
 open_new_tab        : false                    # Opens external URLs in new tab (works for posts, projects and navbar only)
@@ -12,12 +12,21 @@ plugins:
   - jemoji
 
 ### Navbar Settings ###
+navigation:
+  - title: "Resume"
+    url: "/resume/"
+  - title: "Projects"
+    url: "/projects/"
+  - title: "Blog"
+    url: "/blog/"
+  - title: "Contact"
+    url: "/contact/"
+
 nav_exclude:                                            # The following paths are excluded from navbar
   - pages/tags.html
   - pages/404.html
   - pages/index.md
   - documentation/partials/**                           # For Documentation Only
-
 
 ### Author Info ###
 author:

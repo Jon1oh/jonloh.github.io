@@ -12,7 +12,7 @@ dribbble:
   color : 444444
 
 email:
-  url   : "mailto:"
+  url   : "mailto:jon.loh@hotmail.com"
   icon  : fas fa-envelope
   color : db4437
 
@@ -22,7 +22,7 @@ facebook:
   color : 3b5998
 
 github:
-  url   : https://www.github.com/
+  url   : https://www.github.com/jon1oh
   icon  : fab fa-github
   color : 333333
 
@@ -42,7 +42,7 @@ kaggle:
   color : 20beff
 
 linkedin:
-  url   : https://www.linkedin.com/in/
+  url   : https://www.linkedin.com/in/jon-loh
   icon  : fab fa-linkedin-in
   color : 007bb5
 
