@@ -19,7 +19,7 @@ weight: 1
       <li class="list-group-item mb-4"><i class="bi bi-telephone-fill"></i>+65 9822 0762</li>
       <li class="list-group-item mb-4"><i class="bi bi-envelope-fill"></i>jon.loh@hotmail.com</li>
       <li class="list-group-item mb-4"><i class="bi bi-linkedin"></i><a href="https://www.linkedin.com/in/jon-loh/">jon-loh</a></li>
-      {% include elements/button.html link="https://github.com" text="Download My Resume" style="primary" size="lg" %}
+      {% include elements/button.html link="#" text="Download My Resume" style="primary" size="lg" %}
     </ul>
   </div>
 </div>
@@ -37,12 +37,12 @@ weight: 1
   </div>
 </div>
 
-<p class="h2">Experiences</p>
+<p class="h2 mt-4">Experiences</p>
 <div class="row">
 {% include about/experiences.html %}
 </div>
 
-<p class="h2">Education</p>
+<p class="h2 mt-4">Education</p>
 <div class="row">
 {% include about/timeline.html %}
 </div>
@@ -51,3 +51,5 @@ weight: 1
 {% include about/skills.html title="Skills" source=site.data.skills %}
 {% include about/skills.html title="Other Skills" source=site.data.other-skills %}
 </div>
+
+{% include button.html %}

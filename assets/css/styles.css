@@ -1,18 +1,27 @@
 :root {
   --background-light: #ffffff;
   --background-dark: #212121;
+  --list-item-light: #f8f9fa; /* Light background for list items */
+  --list-item-dark: #343a40;  /* Dark background for list items */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: var(--background-dark);
-  }
+[data-theme="dark"] {
+  --background-color: var(--background-dark);
+  --list-item-color: var(--list-item-dark);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --background-color: var(--background-light);
-  }
+[data-theme="light"] {
+  --background-color: var(--background-light);
+  --list-item-color: var(--list-item-light);
+}
+
+/* Apply the background color to list items */
+ul.list-group .list-group-item {
+  background-color: var(--list-item-color);
+  color: var(--text-color); /* Ensure text color is also set for readability */
+  padding: 10px; /* Optional: Adds padding for better spacing */
+  margin-bottom: 5px; /* Optional: Adds space between list items */
+  border-radius: 5px; /* Optional: Adds rounded corners to the list items */
 }
 
 /* Fade in effects for landing image */
@@ -29,6 +38,7 @@
 
 .fade-in {
   animation: fadeIn 1s ease-in-out;
+  border-radius: 5px;
 }
 
 .img-fluid {
@@ -49,7 +59,30 @@
   margin-right: 30px;
 }
 
-/* Adapts unordered lists color when dark mode is enabled */
-ul .list-group, ul .list-group .list-group-item {
-  background: var(--background-color);
+/* Back to Top button design */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 50%;
+  z-index: 1000;
+  cursor: pointer;
+  transition: background-color 0.3s, opacity 0.3s;
+  text-decoration: none; /* Disable underline */
+}
+
+#back-to-top.show {
+  display: block;
+}
+
+#back-to-top:hover {
+  background-color: #0056b3; /* Darker shade of Bootstrap primary color */
+  text-decoration: none !important; /* Ensure underline is disabled on hover */
 }

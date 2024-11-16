@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}" />
+
+<!-- Back to Top Button -->
+<button href="#" type="button" id="back-to-top" title="Back to top">&uarr;</button>
+
+<script>
+  // Show or hide the "back to top" button
+window.addEventListener("scroll", function () {
+  var backToTopButton = document.getElementById("back-to-top");
+  if (window.scrollY > 300) {
+    backToTopButton.classList.add("show");
+  } else {
+    backToTopButton.classList.remove("show");
+  }
+});
+
+// Scroll back to the top when the button is clicked
+document.getElementById("back-to-top").addEventListener("click", function (e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+</script>
