@@ -31,7 +31,7 @@ nav_exclude:                                            # The following paths ar
 ### Author Info ###
 author:
   name              : Jon Loh
-  image             : ./assets/img/jon.jpeg
+  image             : ./assets/img/static/jon.jpeg
 # behance           : your_username
 # dribbble          : your_username
   email             : jon.loh@hotmailcom
