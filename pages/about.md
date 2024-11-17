@@ -24,7 +24,7 @@ weight: 1
   </div>
 </div>
 
-<div class="row d-flex flex-column flex-md-row">
+<div class="row d-flex flex-column-reverse flex-md-row">
   <div class="col-12 col-md-6 mb-3 mx-auto">
     <p class="h2">About Me</p>
     A passionate Cybersecurity student ready to bring his IT experience and skills to an internship with the industry. A highly motivated, disciplined, and independent individual who collaborates well with a team.
@@ -39,7 +39,7 @@ weight: 1
 
 <p class="h2 mt-4">Experiences</p>
 <div class="row">
-{% include about/experiences.html %}
+{% include about/work_experiences.html %}
 </div>
 
 <p class="h2 mt-4">Education</p>

@@ -2,26 +2,46 @@
   --background-light: #ffffff;
   --background-dark: #212121;
   --list-item-light: #f8f9fa; /* Light background for list items */
-  --list-item-dark: #343a40;  /* Dark background for list items */
+  --list-item-dark: #343a40; /* Dark background for list items */
+  --form-text-light: #000000; /* Black text for light mode */
+  --form-background-dark: #343a40; /* Custom background for dark mode */
+  --form-text-dark: #ffffff; /* White text for dark mode */
 }
 
 [data-theme="dark"] {
   --background-color: var(--background-dark);
   --list-item-color: var(--list-item-dark);
+  --form-background-color: var(--form-background-dark);
+  --form-text-color: var(--form-text-dark);
 }
 
 [data-theme="light"] {
   --background-color: var(--background-light);
   --list-item-color: var(--list-item-light);
+  --form-background-color: var(--form-background-light);
+  --form-text-color: var(--form-text-light);
 }
 
 /* Apply the background color to list items */
 ul.list-group .list-group-item {
   background-color: var(--list-item-color);
-  color: var(--text-color); /* Ensure text color is also set for readability */
   padding: 10px; /* Optional: Adds padding for better spacing */
   margin-bottom: 5px; /* Optional: Adds space between list items */
   border-radius: 5px; /* Optional: Adds rounded corners to the list items */
+}
+
+/* Form control styles */
+.form-control {
+  background-color: var(--form-background-color);
+  color: var(--form-text-color);
+}
+
+/* No border for textarea in dark mode */
+[data-theme="dark"] textarea.form-control,
+textarea.form-control:focus {
+  border: none !important;
+  background-color: var(--form-background-color);
+  color: var(--form-text-color);
 }
 
 /* Fade in effects for landing image */
@@ -39,6 +59,7 @@ ul.list-group .list-group-item {
 .fade-in {
   animation: fadeIn 1s ease-in-out;
   border-radius: 5px;
+  visibility: visible;
 }
 
 .img-fluid {
@@ -48,11 +69,6 @@ ul.list-group .list-group-item {
 
 .d-block {
   display: block;
-}
-
-.mx-auto .my-auto {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .bi {

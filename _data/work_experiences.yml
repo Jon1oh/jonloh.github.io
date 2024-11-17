@@ -1,7 +1,8 @@
-experiences:
+work_experiences:
 - title: Associate Security Consultant
   from: Apr 2023
   to: May 2024
+  image: ../assets/img/ncs.jpg
   description: | 
     Conducted Network VAPT & Host Configuration Review
     Automated Report Generation Workflows
