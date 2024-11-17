@@ -8,4 +8,4 @@
 
 - name: Choir
   percentage: 75
-  color: dark
+  color: danger

@@ -62,11 +62,6 @@ textarea.form-control:focus {
   visibility: visible;
 }
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
 .d-block {
   display: block;
 }
@@ -101,4 +96,9 @@ textarea.form-control:focus {
 #back-to-top:hover {
   background-color: #0056b3; /* Darker shade of Bootstrap primary color */
   text-decoration: none !important; /* Ensure underline is disabled on hover */
+}
+
+.timeline-item .content .timeline-image {
+  height: 100px;
+  width: 100px;
 }
