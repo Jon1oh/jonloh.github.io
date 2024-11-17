@@ -2,7 +2,7 @@ timeline:
 - title: Diploma in Cybersecurity & Digital Forensics
   from: 2022
   to: 2024
-  image: ../assets/img/NYP.jpg
+  image: ../assets/img/static/NYP.jpg
   description: |
     <b>Courses</b>:
     AWS Cloud Learning Festival Workshops 2022
@@ -31,7 +31,7 @@ timeline:
 - title: St Patrick's School
   from: 2017
   to: 2020
-  image: ../assets/img/SPS.jpg
+  image: ../assets/img/static/SPS.jpg
   description: | 
     <b>Leadership</b>:
     Guitar Ensemble Vice President
@@ -49,7 +49,7 @@ timeline:
 - title: St Joseph's Institution Junior
   from: 2011
   to: 2016
-  image: ../assets/img/SJIJ.jpg
+  image: ../assets/img/static/SJIJ.jpg
   description: |
     <b>Leadership</b>:
     School Prefect

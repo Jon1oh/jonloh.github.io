@@ -10,7 +10,7 @@ weight: 1
 
 <div class="row d-flex flex-column flex-md-row align-items-center">
   <div class="col-12 col-md-6 mb-3 mx-auto flex-shrink-0">
-    <img src="{{ '/assets/img/jon.jpeg' | relative_url }}" alt="Jon Loh" class="img-fluid fade-in custom-size" />
+    <img src="{{ '/assets/img/static/jon.jpeg' | relative_url }}" alt="Jon Loh" class="img-fluid fade-in custom-size" />
   </div>
 
   <div class="col-12 col-md-6 mb-3 mx-auto flex-grow-1 ms-3">
