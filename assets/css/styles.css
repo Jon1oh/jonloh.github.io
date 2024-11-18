@@ -98,6 +98,7 @@ textarea.form-control:focus {
   text-decoration: none !important; /* Ensure underline is disabled on hover */
 }
 
+/* Timeline image sizing */
 .timeline-item .content .timeline-image {
   height: 100px;
   width: 100px;
